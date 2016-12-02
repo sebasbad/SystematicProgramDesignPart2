@@ -5093,7 +5093,7 @@
 0 0 -1 -1 2 1 #"\0"
 0 -1 1 #"\0"
 1.0 0 -1 92 -1 93 -1 -1 0 1 0 0 0 0 0.0 0.0 0.0 1.0 1.0 1.0 255 38 39 0
-0 0 -1 -1           0 842 0 4 3 85
+0 0 -1 -1           0 846 0 4 3 85
 (
  #";; The first three lines of this file were inserted by DrRacket. The"
  #"y record metadata"
@@ -5114,7 +5114,7 @@
 0 0 17 3 40 #";; alternative-tuition-graph-starter.rkt"
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
-0 7        1525 90           0 0           0 253 0 24 29 1 #"\n"
+0 7        1573 90           0 0           0 261 0 24 29 1 #"\n"
 0 0 14 3 8 #"Consider"
 0 0 24 3 1 #" "
 0 0 14 3 3 #"the"
@@ -5252,6 +5252,13 @@
 0 0 24 3 4 #"    "
 0 0 15 3 11 #"definition."
 0 0 24 29 1 #"\n"
+0 0 17 3 76
+(
+ #"; School data type is a well-formed self-referential data definition"
+ #" because"
+) 0 0 24 29 1 #"\n"
+0 0 17 3 46 #"; it has a base case and a self-reference case"
+0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
 0 0 24 3 1 #"("
 0 0 14 3 1 #"B"
@@ -5369,6 +5376,13 @@
 0 0 14 3 7 #"prefer?"
 0 0 24 3 1 #" "
 0 0 14 3 4 #"Why?"
+0 0 24 29 1 #"\n"
+0 0 17 3 75
+(
+ #"; I prefer the first solution because it's cleaner: it separates the"
+ #" School"
+) 0 0 24 29 1 #"\n"
+0 0 17 3 42 #"; object from the list of school structure"
 0 0 24 29 1 #"\n"
 0           0 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
@@ -5552,7 +5566,12 @@
 0 0 24 29 1 #"\n"
 0 0 17 3 27 #";;  - atomic disinct: false"
 0 0 24 29 1 #"\n"
-0 0 17 3 24 #";;  - compound: 3 fields"
+0 0 17 3 61
+#";;  - compound: 3 fields, (make-school String Natural School)"
+0 0 24 29 1 #"\n"
+0 0 17 3 52 #";;  - atomic non-distinct: (school-name s) is String"
+0 0 24 29 1 #"\n"
+0 0 17 3 56 #";;  - atomic non-distinct: (school-tuition s) is Natural"
 0 0 24 29 1 #"\n"
 0 0 17 3 47 #";;  - self-reference: (school-next s) is School"
 0 0 24 29 1 #"\n"
