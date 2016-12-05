@@ -5093,7 +5093,7 @@
 0 0 -1 -1 2 1 #"\0"
 0 -1 1 #"\0"
 1.0 0 -1 92 -1 93 -1 -1 0 1 0 0 0 0 0.0 0.0 0.0 1.0 1.0 1.0 255 38 39 0
-0 0 -1 -1           0 568 0 4 3 85
+0 0 -1 -1           0 569 0 4 3 85
 (
  #";; The first three lines of this file were inserted by DrRacket. The"
  #"y record metadata"
@@ -6281,7 +6281,8 @@
 0 0 24 29 1 #"\n"
 0 0 17 3 15 #";; Bear -> Bear"
 0 0 24 29 1 #"\n"
-0 0 17 3 48 #";; start the world with (main (make-bear 0 0 0))"
+0 0 17 3 24 #";; start the world with "
+0 0 17 3 45 #"(main (make-bear (/ WIDTH 2) (/ HEIGHT 2) 0))"
 0 0 24 29 1 #"\n"
 0 0 17 3 3 #";; "
 0 0 24 29 1 #"\n"
