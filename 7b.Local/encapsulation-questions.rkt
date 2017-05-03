@@ -5,12 +5,12 @@
 ;; ListOfPerson -> ListOfString
 ;; produce a list of the names of the persons under 20
 
-(check-expect (names-under-20--person P1) (list "N1"))
-(check-expect (names-under-20--lop empty) empty)
-(check-expect (names-under-20--person P2) (list "N1"))
-(check-expect (names-under-20--person P4) (list "N3" "N1"))
+(check-expect (names-under-20 P1) (list "N1"))
+(check-expect (names-under-20 P2) (list "N1"))
+(check-expect (names-under-20 P4) (list "N3" "N1"))
 
-(define (names-under-20--person p)
+(define (names-under-20 p)
+  (local [(define (names-under-20--person p)
   (if (< (person-age p) 20)
       (cons (person-name p)
             (names-under-20--lop (person-children p)))
@@ -20,4 +20,5 @@
   (cond [(empty? lop) empty]
         [else
          (append (names-under-20--person (first lop))
-                 (names-under-20--lop (rest lop)))]))
+                 (names-under-20--lop (rest lop)))]))]
+    (names-under-20--person p)))
